@@ -1,6 +1,6 @@
 # roblox overlay chat
 
-so this is a chat that floats on top of roblox. i made it because in-game chat is blocked in my region, but it works for anything - disabled chat, "system messages only" games, whatever. anyone in your server who has the app can talk to you.
+so this is a chat that floats on top of roblox. i made it because in-game chat is blocked in my region, but it works for anything like disabled chat, "system messages only" games, whatever. anyone in your server who has the app can talk to you.
 
 **[download here](https://github.com/GabiCreative/roblox-overlay-chat-releases/releases/latest)** - windows will hit you with the "protected your pc" popup since i didn't pay for code signing, just click more info > run anyway. you only install it once, it updates itself after that.
 
@@ -12,6 +12,6 @@ commands: `/w name message` to whisper, `/me`, `/mute name` and `/unmute name` i
 
 for the curious: roblox writes a log file that says which server you joined, and the app just reads it. nothing touches the roblox client itself. your name is pulled from the account you're logged into so no impersonating people.
 
-there's a swear filter, a report button (hover a message, hit the flag), and actual moderation behind it. bans are permanent so don't be a menace. messages aren't stored anywhere - once they scroll by they're gone.
+there's a swear filter, a report button (hover a message, hit the flag), and actual moderation behind it. bans are perm. messages aren't stored anywhere.
 
 if it says "not in a game" while you're clearly in one, switch roblox to windowed or borderless fullscreen.
