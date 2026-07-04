@@ -1,25 +1,17 @@
 # roblox overlay chat
 
-chat that sits on top of roblox. works even when in-game chat is blocked or disabled. you talk to anyone in your server who also has the app.
+so this is a chat that floats on top of roblox. i made it because in-game chat is blocked in my region, but it works for anything - disabled chat, "system messages only" games, whatever. anyone in your server who has the app can talk to you.
 
-## download
+**[download here](https://github.com/GabiCreative/roblox-overlay-chat-releases/releases/latest)** - windows will hit you with the "protected your pc" popup since i didn't pay for code signing, just click more info > run anyway. you only install it once, it updates itself after that.
 
-get the exe from [releases](https://github.com/GabiCreative/roblox-overlay-chat-releases/releases/latest). windows will warn you because it's not signed, click more info > run anyway. after installing once it updates itself.
+using it: open the app, hop into a game, it connects on its own. ctrl+shift+c lets you type, esc goes back to playing (the window turns click-through so it never blocks the game). the x hides it, same shortcut brings it back, quit from the tray icon. server tab is your server, game tab is everyone playing that game anywhere.
 
-## using it
+heads up - you can only see people who actually have the app. if your friend isn't showing up they're probably in a different server, join them through the friends list.
 
-- open the app, join a game, it connects by itself
-- ctrl+shift+c to type, esc to go back to playing
-- the x hides it, ctrl+shift+c brings it back, quit from the tray icon
-- server tab = your server, game tab = everyone playing that game
-- you only see people who have the app. join your friend through the friends list so you end up in the same server
+commands: `/w name message` to whisper, `/me`, `/mute name` and `/unmute name` if someone's annoying, `/clear`, `/help`
 
-commands: `/w name message` (whisper), `/me`, `/mute name`, `/unmute name`, `/clear`, `/help`
+for the curious: roblox writes a log file that says which server you joined, and the app just reads it. nothing touches the roblox client itself. your name is pulled from the account you're logged into so no impersonating people.
 
-## how it works
+there's a swear filter, a report button (hover a message, hit the flag), and actual moderation behind it. bans are permanent so don't be a menace. messages aren't stored anywhere - once they scroll by they're gone.
 
-roblox saves a log file on your pc that says which server you joined. the app just reads that file, nothing gets injected into roblox. your name comes from the account you're logged into so you can't fake being someone else.
-
-there's a chat filter, and you can report messages by hovering over them and clicking the flag. bans are permanent. messages aren't saved anywhere.
-
-if it says "not in a game", put roblox in windowed or borderless fullscreen.
+if it says "not in a game" while you're clearly in one, switch roblox to windowed or borderless fullscreen.
