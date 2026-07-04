@@ -1,49 +1,25 @@
-# Roblox Overlay Chat
+# roblox overlay chat
 
-A chat window that sits on top of Roblox and lets you talk to your friends in the same server, even when the in-game chat doesn't work (region blocked, disabled by the game, whatever).
+chat that sits on top of roblox. works even when in-game chat is blocked or disabled. you talk to anyone in your server who also has the app.
 
-**[Download the latest version here](https://github.com/GabiCreative/roblox-overlay-chat-releases/releases/latest)** — grab the `.exe` file.
+## download
 
-## Installing
+get the exe from [releases](https://github.com/GabiCreative/roblox-overlay-chat-releases/releases/latest). windows will warn you because it's not signed, click more info > run anyway. after installing once it updates itself.
 
-1. Download and run the installer
-2. Windows will show a "Windows protected your PC" warning because the app isn't signed. Click **More info**, then **Run anyway**. It's fine.
-3. That's it. The app updates itself from now on, you never need to come back here.
+## using it
 
-## How to use it
+- open the app, join a game, it connects by itself
+- ctrl+shift+c to type, esc to go back to playing
+- the x hides it, ctrl+shift+c brings it back, quit from the tray icon
+- server tab = your server, game tab = everyone playing that game
+- you only see people who have the app. join your friend through the friends list so you end up in the same server
 
-- Start the app, then join any Roblox game. The panel in the top right corner connects automatically and shows the game's name.
-- Press **Ctrl+Shift+C** to start typing. Press **Esc** or Ctrl+Shift+C again to go back to playing (the panel becomes click-through so it never blocks your game).
-- The **X** hides the panel. Ctrl+Shift+C brings it back. Quit from the tray icon near your clock.
-- **Server tab** = people in your exact server. **Game tab** = everyone playing that game, any server.
-- You only see people who also have the app. If your friend isn't showing up, they either don't have it or they're in a different server (use Join Friend so you land in the same one).
+commands: `/w name message` (whisper), `/me`, `/mute name`, `/unmute name`, `/clear`, `/help`
 
-## Commands
+## how it works
 
-Type these in the chat box:
+roblox saves a log file on your pc that says which server you joined. the app just reads that file, nothing gets injected into roblox. your name comes from the account you're logged into so you can't fake being someone else.
 
-| command | what it does |
-|---|---|
-| `/w name message` | whisper, only that person sees it |
-| `/me does something` | action message in italics |
-| `/mute name` | hide someone's messages (just for you) |
-| `/unmute name` | undo that |
-| `/clear` | clear the chat window |
-| `/help` | shows this list in chat |
+there's a chat filter, and you can report messages by hovering over them and clicking the flag. bans are permanent. messages aren't saved anywhere.
 
-## How it works (short version)
-
-Roblox writes a log file on your PC that says which server you joined. The app reads that file (nothing is injected into Roblox, no rules broken) and connects you to a chat room for that exact server. Your username and avatar come from the Roblox account you're logged into, so nobody can pretend to be someone else.
-
-## Rules and moderation
-
-- Messages go through a chat filter (swearing, bullying etc. comes out as ####). Trying to dodge it with stuff like k1ll doesn't work either.
-- If someone's being toxic, hover over their message and click the flag to report it. A moderator sees every report.
-- Breaking the rules can get you muted or banned. Bans stick.
-- Messages aren't saved anywhere. Once they scroll by, they're gone.
-
-## Problems?
-
-- **Panel says "Not in a game"** — make sure Roblox is in windowed or borderless fullscreen (the default). Exclusive fullscreen hides overlays.
-- **Can't see my friend** — same game isn't enough, you need the same server. Join through the friends list.
-- **First message of the day takes a bit** — the chat server wakes up if nobody used it for a while. Give it a few seconds.
+if it says "not in a game", put roblox in windowed or borderless fullscreen.
